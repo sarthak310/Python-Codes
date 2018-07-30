@@ -1,0 +1,10 @@
+n=int(input())
+temp=n
+while(temp>9):
+	sum=0
+	while(temp!=0):
+		d=temp%10
+		sum=sum+d
+		temp=temp//10
+	temp=sum
+print(temp)
