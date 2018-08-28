@@ -1,0 +1,17 @@
+t=input()
+p=input()
+count=0
+i=0
+j=0
+while(i<len(t)):
+	if(t[i]==p[j]):
+		if(j==len(p)-1):
+			count+=1
+			j=0
+		else:
+			j+=1
+	else:
+		i=i-j
+		j=0
+	i+=1
+print(count)
